@@ -26,6 +26,9 @@ let accelerations = {
 
 function computeMaxVelocity() {
   console.log(accelerations);
+  document.getElementById("max-velocity").innerHTML = accelerations.x.toString();
+  document.getElementById("max-velocity").innerHTML += accelerations.y.toString();
+  document.getElementById("max-velocity").innerHTML += accelerations.z.toString();
 }
 
 function handleMotion(event) {
